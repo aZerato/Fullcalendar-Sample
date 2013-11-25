@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>FullCalendar Sample</title>
+		
+		<!-- Jquery -->
+		<script type="text/javascript" src="./assets/jquery.min.js"></script>
+		<link type="text/css" rel="stylesheet" href="./assets/ui/themes/ui-lightness/jquery-ui-1.10.3.custom.min.css" >
+		<script type="text/javascript" src="./assets/ui/jquery-ui-1.10.3.custom.min.js"></script>
+
+		<!-- FullCalendar -->
+		<link type="text/css" rel="stylesheet" href="./assets/fullcalendar/fullcalendar.css" >
+		<script type="text/javascript" src="./assets/fullcalendar/fullcalendar.min.js"></script>
+
+		<!-- Calendar Gestionnary -->
+		<script type="text/javascript" src="./scripts/calendar-gestionnary.js"></script>
+	</head>
+	<body>
+		<div id="calendar"></div>
+		
+		<button id="saveEvents">Save Calendar</button>
+		<button id="loadEvents">Load Calendar</button>
+		
+		<div id="dialogEditEvent" style="display: none;">
+			<form id="editEvent">
+				<p>
+					<label for"name">Rendezvous name :</label>
+					<input id="name" type="text"/>
+				</p><p>
+					<label for"start">Choose start day :</label>
+					<input id="start" type="date"/>
+				</p><p>
+					<label for"end">Choose end day :</label>
+					<input id="end" type="date"/>
+				</p><p>
+					<input type="submit"/>
+				</p>
+			</form>
+		</div>
+	</body>
+</html>
